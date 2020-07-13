@@ -13,4 +13,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="empty_city_list">No tienes ciudades seleccionadas :(</string>
+    <string name="no_search_results">No se encontraron resultados</string>
+    <string name="search_hint">Ingresa el nombre de una ciudad</string>
+    <string name="title_activity_search_city">Agregar ciudad</string>
 </resources>
