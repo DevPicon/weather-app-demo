@@ -20,6 +20,7 @@
         <activity
             android:name=".presentation.citylist.MyCitiesActivity"
             android:label="@string/title_activity_my_cities"
+            android:parentActivityName=".presentation.landing.LandingActivity"
             android:theme="@style/RegularAppTheme" />
         <activity
             android:name=".presentation.landing.LandingActivity"
