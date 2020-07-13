@@ -3,16 +3,17 @@ package pe.devpicon.android.myweatherapp.presentation.citylist.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import pe.devpicon.android.myweatherapp.data.WeatherLocalRepository
+import pe.devpicon.android.myweatherapp.data.WeatherRepository
+import pe.devpicon.android.myweatherapp.data.local.WeatherLocalDatasource
 import pe.devpicon.android.myweatherapp.data.local.City
 
-class CityListViewModel : ViewModel() {
+class CityListViewModel(private val weatherRepository: WeatherRepository) : ViewModel() {
 
     fun getCityList(): LiveData<List<City>> =
             loadStoredCityList()
 
     private fun loadStoredCityList(): LiveData<List<City>> = liveData {
-        val storedCityList = WeatherLocalRepository().getStoredCityList()
+        val storedCityList = weatherRepository.getStoredCityList()
         emit(storedCityList)
     }
 }
