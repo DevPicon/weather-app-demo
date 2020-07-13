@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Weather App</string>
+    <string name="hello">Hola, \nBienvenido</string>
+    <string name="hello_instruction">¿Qué te parece si agregamos \nuna nueva ciudad?</string>
+    <string name="add_city">Agregar ciudad</string>
+    <string name="title_activity_my_cities">Mis ciudades</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="empty_city_list">No tienes ciudades seleccionadas :(</string>
 </resources>

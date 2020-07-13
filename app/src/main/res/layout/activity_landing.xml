@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:fitsSystemWindows="true"
     android:layout_height="match_parent"
     android:background="@drawable/welcome"
-    tools:context=".presentation.LandingActivity">
+    android:fitsSystemWindows="true"
+    tools:context=".presentation.landing.LandingActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_left"
@@ -45,31 +45,32 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:gravity="start"
+        android:text="@string/hello"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toEndOf="@+id/gl_left"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
-        android:text="Hola, \nBienvenido" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
     <TextView
         android:id="@+id/tv_secondary_salute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/hello_instruction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toEndOf="@+id/gl_left"
-        app:layout_constraintTop_toBottomOf="@+id/tv_salute"
-        android:text="¿Qué te parece si agregamos \nuna nueva ciudad?" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_salute" />
 
 
     <com.google.android.material.button.MaterialButton
+        style="@style/AddCity"
+        android:id="@+id/btn_add_city"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Agregar ciudad"
-        style="@style/AddCity"
+        android:text="@string/add_city"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintStart_toEndOf="@+id/gl_left"

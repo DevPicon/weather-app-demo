@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pe.devpicon.android.myweatherapp">
 
@@ -8,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".presentation.LandingActivity">
+        <activity android:name=".presentation.search.SearchCityActivity"></activity>
+        <activity
+            android:name=".presentation.citylist.MyCitiesActivity"
+            android:label="@string/title_activity_my_cities"
+            android:theme="@style/RegularAppTheme" />
+        <activity
+            android:name=".presentation.landing.LandingActivity"
+            android:theme="@style/LandingAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
